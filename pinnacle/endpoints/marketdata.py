@@ -97,7 +97,7 @@ class MarketData(BaseEndpoint):
         )
 
     def get_odds(self, sport_id, league_ids=None, event_ids=None, since=None, is_live=None,
-                 odds_format=OddsFormat.Decimal, session=None):
+                 odds_format=OddsFormat.Decimal.value, session=None):
         """
         Get straight and parlay odds for all non-settled events.
 
